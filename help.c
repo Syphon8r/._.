@@ -15,7 +15,7 @@ int main() {
     srand(time(NULL));
 
     for (i = 0; i < 100; i++) {
-        int num = rand() % 90 + 10;  // [10, 99] 
+        int num = rand() % (99 - 10 + 1) + 10;  // [10, 99] 
         fprintf(file, "%d\n", num);
     }
 
